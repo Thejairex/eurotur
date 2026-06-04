@@ -1,0 +1,17 @@
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 30px rgba(13, 28, 50, 0.04);
+}
+
+.glass-card:hover {
+    box-shadow: 0 15px 35px rgba(13, 28, 50, 0.08);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}

@@ -18,118 +18,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
-    <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-        }
-
-        .glass-card {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            box-shadow: 0 10px 30px rgba(13, 28, 50, 0.04);
-        }
-
-        .glass-card:hover {
-            box-shadow: 0 15px 35px rgba(13, 28, 50, 0.08);
-            transform: translateY(-2px);
-            transition: all 0.3s ease;
-        }
-    </style>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "secondary-fixed": "#c6e7ff",
-                        "on-secondary-fixed": "#001e2d",
-                        "tertiary-fixed": "#d9e3f4",
-                        "tertiary-fixed-dim": "#bdc7d8",
-                        "on-primary-fixed-variant": "#39475f",
-                        "on-surface": "#191c1e",
-                        "inverse-surface": "#2d3133",
-                        "surface-container-highest": "#e0e3e5",
-                        "surface-container-low": "#f2f4f6",
-                        "on-tertiary-fixed": "#121c28",
-                        "surface-variant": "#e0e3e5",
-                        "surface": "#f7f9fb",
-                        "on-primary-container": "#76849f",
-                        "on-secondary": "#ffffff",
-                        "on-tertiary-container": "#7a8594",
-                        "on-tertiary": "#ffffff",
-                        "on-error-container": "#93000a",
-                        "tertiary": "#000000",
-                        "on-tertiary-fixed-variant": "#3e4755",
-                        "secondary": "#00658d",
-                        "tertiary-container": "#121c28",
-                        "on-background": "#191c1e",
-                        "background": "#f7f9fb",
-                        "on-secondary-fixed-variant": "#004c6b",
-                        "surface-container-high": "#e6e8ea",
-                        "surface-tint": "#515f78",
-                        "error-container": "#ffdad6",
-                        "error": "#ba1a1a",
-                        "outline": "#75777e",
-                        "on-error": "#ffffff",
-                        "surface-bright": "#f7f9fb",
-                        "secondary-fixed-dim": "#82cfff",
-                        "outline-variant": "#c5c6cd",
-                        "on-secondary-container": "#004866",
-                        "surface-container": "#eceef0",
-                        "on-primary": "#ffffff",
-                        "inverse-primary": "#b9c7e4",
-                        "inverse-on-surface": "#eff1f3",
-                        "surface-dim": "#d8dadc",
-                        "primary": "#000000",
-                        "primary-fixed-dim": "#b9c7e4",
-                        "on-surface-variant": "#44474d",
-                        "primary-fixed": "#d6e3ff",
-                        "primary-container": "#0d1c32",
-                        "surface-container-lowest": "#ffffff",
-                        "secondary-container": "#2dbcfe",
-                        "on-primary-fixed": "#0d1c32"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "base": "8px",
-                        "container-max": "1280px",
-                        "margin-mobile": "16px",
-                        "margin-desktop": "48px",
-                        "gutter": "24px"
-                    },
-                    "fontFamily": {
-                        "label-md": ["Inter"],
-                        "headline-sm": ["Montserrat"],
-                        "body-md": ["Inter"],
-                        "headline-lg-mobile": ["Montserrat"],
-                        "display-lg": ["Montserrat"],
-                        "body-sm": ["Inter"],
-                        "headline-md": ["Montserrat"],
-                        "body-lg": ["Inter"],
-                        "headline-lg": ["Montserrat"]
-                    },
-                    "fontSize": {
-                        "label-md": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.08em", "fontWeight": "600" }],
-                        "headline-sm": ["20px", { "lineHeight": "1.4", "fontWeight": "600" }],
-                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
-                        "headline-lg-mobile": ["28px", { "lineHeight": "1.2", "fontWeight": "600" }],
-                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "0.02em", "fontWeight": "700" }],
-                        "body-sm": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
-                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
-                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "600" }]
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/main.js"></script>
 </head>
 
 <body
@@ -145,15 +35,14 @@
                 <p class="text-label-md font-label-md text-on-primary-container mt-1">Corporate Travel Solutions</p>
             </div>
         </div>
-        <div class="flex-1 overflow-y-auto w-full">
+        <div class="flex-1 overflow-y-auto overflow-x-hidden w-full">
             <ul class="flex flex-col w-full space-y-1">
-                <!-- Active Navigation: Institutional -->
+                <!-- Inactive Navigation: Institucional -->
                 <li class="w-full">
-                    <a class="border-l-4 border-secondary-container bg-white/10 text-secondary-container font-bold px-4 py-3 flex items-center gap-3 w-full opacity-80 transition-all duration-200 translate-x-1 transition-transform duration-300"
-                        href="#">
-                        <span class="material-symbols-outlined" data-icon="domain" data-weight="fill"
-                            style="font-variation-settings: 'FILL' 1;">domain</span>
-                        <span class="text-label-md font-label-md">Institutional</span>
+                    <a class="text-on-primary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-white/5 hover:text-white transition-all w-full"
+                        href="institucional.html">
+                        <span class="material-symbols-outlined" data-icon="domain">domain</span>
+                        <span class="text-label-md font-label-md">Institucional</span>
                     </a>
                 </li>
                 <!-- Inactive Navigation -->
@@ -161,28 +50,28 @@
                     <a class="text-on-primary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-white/5 hover:text-white transition-all w-full"
                         href="#">
                         <span class="material-symbols-outlined" data-icon="groups">groups</span>
-                        <span class="text-label-md font-label-md">Human Resources</span>
+                        <span class="text-label-md font-label-md">Recursos Humanos</span>
                     </a>
                 </li>
                 <li class="w-full">
                     <a class="text-on-primary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-white/5 hover:text-white transition-all w-full"
                         href="#">
                         <span class="material-symbols-outlined" data-icon="payments">payments</span>
-                        <span class="text-label-md font-label-md">Administration</span>
+                        <span class="text-label-md font-label-md">Administración</span>
                     </a>
                 </li>
                 <li class="w-full">
                     <a class="text-on-primary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-white/5 hover:text-white transition-all w-full"
                         href="#">
                         <span class="material-symbols-outlined" data-icon="flight_takeoff">flight_takeoff</span>
-                        <span class="text-label-md font-label-md">Operations</span>
+                        <span class="text-label-md font-label-md">Operaciones</span>
                     </a>
                 </li>
                 <li class="w-full">
                     <a class="text-on-primary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-white/5 hover:text-white transition-all w-full mt-8"
                         href="#">
                         <span class="material-symbols-outlined" data-icon="settings">settings</span>
-                        <span class="text-label-md font-label-md">Settings</span>
+                        <span class="text-label-md font-label-md">Configuración</span>
                     </a>
                 </li>
             </ul>
@@ -191,7 +80,7 @@
             <button
                 class="w-full py-3 px-4 bg-secondary text-on-secondary rounded-DEFAULT text-label-md font-label-md font-semibold hover:bg-secondary-fixed-dim hover:text-on-secondary-fixed transition-colors shadow-sm flex items-center justify-center gap-2">
                 <span class="material-symbols-outlined text-sm">confirmation_number</span>
-                Quick Ticket
+                Ticket Rápido
             </button>
         </div>
     </nav>
@@ -205,22 +94,6 @@
                     class="text-headline-md font-headline-md font-bold text-secondary dark:text-secondary-fixed-dim hidden md:block">Eurotur</span>
                 <img alt="Eurotur Premium Logo" class="h-8 object-contain w-auto md:hidden"
                     src="data:image/png;base64,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" />
-            </div>
-            <div class="flex items-center gap-4">
-                <button
-                    class="p-2 text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-colors rounded-full">
-                    <span class="material-symbols-outlined" data-icon="notifications">notifications</span>
-                </button>
-                <button
-                    class="p-2 text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-colors rounded-full">
-                    <span class="material-symbols-outlined" data-icon="apps">apps</span>
-                </button>
-                <div
-                    class="h-8 w-8 rounded-full bg-secondary-fixed overflow-hidden border border-outline-variant/30 ml-2">
-                    <img alt="User profile avatar" class="h-full w-full object-cover"
-                        data-alt="A professional headshot of a corporate employee in a brightly lit modern office setting. The lighting is soft and flattering. The color palette is neutral with hints of corporate blue in the background. High resolution, sharp focus."
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBG-Ti4pR9fwip2cKCNnhgJIXfAKZlcqqiWdcq6CpX1CQOfGV_KQrFmTrU1G4kfNNLNtOQomtLUn0aDcFnlb6nG70IRMdWN1fUcWWsNlSVnHN5a59-SpLQKqUyEbzxzic6hPN5fM51Ob2U24c0E4mmL-Muj4lWYhRqkPsZtPgcEdzaJGlMcGLydEPpvqyl3H5YzdVvfq8hRN3YXblQaiuJgAfVu5iYUGemjkmhRNPNnmmKy7ERjSKQVqXRmAah0eaA6f_uDZSXOeShq" />
-                </div>
             </div>
         </header>
         <!-- Main Canvas -->
@@ -369,7 +242,7 @@
                     © 2024 Eurotur S.A. Global Travel Prestige.</p>
                 <div class="flex gap-6">
                     <a class="text-label-md font-label-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-colors"
-                        href="#">Institutional Site</a>
+                        href="#">Institucional Site</a>
                     <a class="text-label-md font-label-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-colors"
                         href="#">Privacy Policy</a>
                     <a class="text-label-md font-label-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-colors"
